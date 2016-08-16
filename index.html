@@ -76,6 +76,52 @@
 				<p>Большинство едет в гранд каньон и толпится там</p>
 			</article>
 		</section>
+		<div class="seach-block">
+			<b>ЗАИНТЕРЕСОВАЛИСЬ?</b>
+			<p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+			<img src="img/hotel-map" alt="hotel-map" width="100" height="100">
+			<div class="seach-field">
+				<h2>ПОИСК ГОСТИНИЦЫ В седоне</h2>
+				<form action="https://echo.htmlacademy.ru" method="post">
+					<label>
+						<p>Дата заезда:</p>
+						<!-- нужно ли для input date задавать имя, и должно ли оно быть одинаковое если 2 подобных поля, как в данном примере? -->
+						<input type="date" name="calendar-in" max="2016-12-20" min="2016-04-10" value="24 АПРЕЛЯ 2016">
+					</label>
+					<label>
+						<p>Дата заезда:</p>
+						<input type="date" name="calendar-out" max="2016-12-20" min="2016-01-10" value="4 ИЮЛЯ 2016">
+					</label>
+					<label>
+						<p>Взрослые</p>
+						<input type="number" name="adults" min="0" max="99" placeholder="2">
+					</label>
+					<label>
+						<p>Дети</p>
+						<input type="number" name="child" min="0" max="99" placeholder="0">
+					</label>
+					<input type="submit" value="Найти">
+				</form>
+			</div>
+		</div>
 	</main>
+	<footer class="main-footer">
+		<div class="container">
+			<section class="footer-visitsedona">
+				<a href="#">#visitSEDONA</a>
+			</section>
+			<section class="footer-social">
+				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          		<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          		<a class="social-btn social-btn-yt" href="#">Ютуб</a>
+			</section>
+			<section class="footer-copyright">
+			<!-- не уверен на счет p в этом блоке, думал поставить span. 
+			Картинку лого академии делать со словами или слова html academy забить через html?  -->
+				<p>WEBSITE by</p>
+				<img src="#" alt="html academy" width="100" height="100">
+			</section>
+		</div>
+	</footer>
 </body>
 </html>
