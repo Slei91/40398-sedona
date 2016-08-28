@@ -1,14 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
 body {
 	font-size: 14px;
 	line-height: 21px;
 	color: 333333;
 	font-family: "PT Sans" , "Arial", sans-serif;
 	text-transform: uppercase;
-	
+	background-color: #f2f2f2;
+
 }
 h2 {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
 	color: 000000;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #d1d1d1;
+}
+.main-header{
+	height: 56px;
+	position: relative;
+}
+.index-logo {
+	width: 138px;
+	height: 70px;
+	position: absolute;
+	left: 600px;
+}
+.main-nav {
+	height: 55px;
+	background-color: pink;
+}
+.main-picture {
+	height: 434px;
+	padding-top: 76px;
+	background-color: black;
+	background:url(../img/index_white.png) no-repeat bottom,
+	 url(../img/index_photo.jpg) no-repeat 0 -55px;
+	
+}
+.one {
+	width: 458px;
+	height: 352px;
+	margin: 0 auto;
+}
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.title {
+	min-height: 215px; 
+	background-color: #ffffff;
+}
+.causes-sec-1 {
+	min-height: 260px;
+	background: url(../img/content_photo1.jpg) no-repeat 400px 0;
+}
+.causes-blue {
+	width: 400px;
+	background-color: #81b3d2;
+	min-height: 260px;
+}
+.causes1 {
+	float: left;
+}
+.causes-sec-2 {
+	min-height: 260px;
+	background: url(../img/content_photo2.jpg) no-repeat;
+}
+.causes2 {
+	float: right;
+}
+.recommendations-sec {
+	min-height: 333px;
+	background-color: pink;
+}
+.recommendations {
+	width: 400px;
+	min-height: 333px;
+}
+.recommendations-1 {
+	float: left;
+	background:url(../img/house.png) no-repeat 50% 61px;
+}
+.recommendations-2 {
+	float: left;
+	background:url(../img/burger.png) no-repeat 50% 61px;
+}
+.recommendations-3 {
+	float: right;
+	background:url(../img/present.png) no-repeat 50% 61px;	
+}
+.causes-sec-3-4-5 {
+	min-height: 256px;
+	background-color: #eeeeee;
+}
+.causes {
+	width: 400px;
+	min-height: 256px;
+}
+.causes-1 {
+	float: left;
+}
+.causes-2 {
+	float: left;
+}
+.causes {
+	float: right;
+}
+.seach-block-title{
+	min-height: 291px;
+	background-color: #ffffff;
+	position: relative;
+	text-align: center;
+}
+.seach-field {
+	width: 568px;
+	height: 481px;
+	background-color: pink;
+	position: absolute;
+	top: 205px;
+	left: 316px;
+}
+.map-container {
+	height: 473px;
+	background-color: #cbdda9;
+	background: url(../img/map.jpg) no-repeat;
+}
+.footer-item {
+	height: 120px;
+}
+.footer-visitsedona {
+	width: 400px;
+	float: left;
+	background-color: yellow;
+}
+.footer-social {
+	width: 400px;
+	float: left;
+	background-color: green;
+}
+.footer-copyright {
+	width: 400px;
+	float: right;
+	background-color: yellow;
 }
