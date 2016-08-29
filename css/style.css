@@ -24,13 +24,15 @@ h2 {
 }
 .main-header{
 	height: 56px;
-	position: relative;
+	
 }
 .index-logo {
 	width: 138px;
 	height: 70px;
 	position: absolute;
-	left: 600px;
+	left: 50%;	
+	margin-left: -69px;
+	
 }
 .main-nav {
 	height: 55px;
@@ -129,9 +131,10 @@ h2 {
 	left: 316px;
 }
 .map-container {
-	height: 473px;
+	height: 593px;
 	background-color: #cbdda9;
 	background: url(../img/map.jpg) no-repeat;
+	
 }
 .footer-item {
 	height: 120px;
@@ -139,15 +142,21 @@ h2 {
 .footer-visitsedona {
 	width: 400px;
 	float: left;
-	background-color: yellow;
 }
 .footer-social {
 	width: 400px;
 	float: left;
-	background-color: green;
 }
 .footer-copyright {
 	width: 400px;
 	float: right;
-	background-color: yellow;
+}
+.main-footer {
+	position: relative;
+}
+.container-f {
+	background-color: rgba(253, 253, 253, 0.9);
+	position: absolute;
+	bottom: 0px;
+	left: 75px;
 }
