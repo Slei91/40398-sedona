@@ -29,37 +29,40 @@
 						<h2>ИНФРАСТРУКТУРА:</h2>
 							<label>
 								<input type="checkbox" name="bath" checked>
-								<p>БАССЕЙН</p>
+								<span>БАССЕЙН</span>
 							</label>
 							<label>
 								<input type="checkbox" name="parking">
-								<p>ПАРКОВКА</p>
+								<span>ПАРКОВКА</span>
 							</label>	
 							<label>
 								<input type="checkbox" name="wi-fi">
-								<p>Wi-Fi</p>
+								<span>Wi-Fi</span>
 							</label>		
 					</fieldset>
 					<fieldset class="field field-2">
 						<h2>Тип жилья:</h2>
 							<label>
 								<input type="checkbox" name="hotel" checked>
-								<p>Гостиница</p>
+								<span>Гостиница</span>
 							</label>
 							<label>
 								<input type="checkbox" name="motel" checked>
-								<p>МОТЕЛЬ</p>
+								<span>МОТЕЛЬ</span>
 							</label>	
 							<label>
 								<input type="checkbox" name="apartaments" checked>
-								<p>АПАРТАМЕНТЫ</p>
+								<span>ПАРТАМЕНТЫ</span>
 							</label>		
 					</fieldset>
 					<fieldset class="field field-3">
 						<h2>Стоимость в сутки (Р):</h2>
 							<div>
-								<input type="text" name="min-price" value="от 0">
-								<input type="text" name="max-price" value="ДО 3000">
+								<label for="min-price"><span>от</span></label>
+								<input id="min-price" type="text" name="min-price" value="0">
+
+								<label for="max-price"><span>до</span></label>
+								<input id="max-price" type="text" name="max-price" value="3000">
 							</div>
 							<div class="range-slider-block">
 								<div class="slider-range"></div>
@@ -74,12 +77,16 @@
 		<section class="resault-section">
 			<div class="sorting">
 				<h2>Найдено: 3</h2>
-				<div class="breadcrumb-block">
+				<div class="breadcrumb-block1">
+					<span>СОРТИРОВКА:</span>
 					<ul>
-						<li><p>СОРТИРОВКА:</p></li>
 						<li><a href="#">ПО ЦЕНЕ</a></li>
 						<li><a href="#">ПО ТИПУ</a></li>
 						<li><a href="#">ПО РЕЙТИНГУ</a></li>
+					</ul>
+				</div>	
+				<div class="breadcrumb-block1">	
+					<ul>
 						<li><a href="#" class="arrow arrow-up"></a></li>
 						<li><a href="#" class="arrow arrow-down"></a></li>
 					</ul>
