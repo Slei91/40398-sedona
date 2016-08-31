@@ -20,7 +20,7 @@ h2 {
 .container {
 	width: 1200px;
 	margin: 0 auto;
-	background-color: #d1d1d1;
+	background-color: #ffffff;
 }
 .main-header{
 	height: 56px;
@@ -37,14 +37,14 @@ h2 {
 	margin-left: -69px;
 }
 .main-nav {
-	height: 55px;
+	height: 56px;
 	background-color: pink;
 }
 .main-picture {
 	height: 434px;
 	padding-top: 76px;
 	background-color: black;
-	background:url(../img/index_white.png) no-repeat bottom,
+	background: url(../img/index_white.png) no-repeat bottom,
 	 url(../img/index_photo.jpg) no-repeat 0 -55px;
 	
 }
@@ -160,4 +160,50 @@ h2 {
 	background-color: rgba(253, 253, 253, 0.9);
 	position: absolute;
 	bottom: 0px;
+}
+/* sedona hotels */
+.main-catalog-picture {
+	height: 217px;
+	background: #ffffff url(../img/catalog_photo.jpg) no-repeat 0 -56px;
+}
+.seach-form {
+	width: 1056px;
+	margin: 0 auto;
+}
+.field-1 {
+	float: left;
+	width: 240px;
+}
+.field-2 {
+	float: left;
+	width: 240px;
+	margin-left: 13px;
+}
+.field-3 {
+	float: right;
+	width: 328px;
+}
+.sorting {
+	height: 86px;
+	border-bottom: 1px solid #f2f2f2;
+	padding: 0 72px 0 72px;
+}
+.resault-section article {
+	height: 150px;
+	border-bottom: 1px solid #f2f2f2;
+	padding: 0 72px 0 72px;
+}
+.catalog-photo {
+	width: 135px;
+	float: left;
+	margin-right: 30px;
+}
+.catalog-info {
+	width: 363px;
+	float: left;
+}
+.catalog-rating {
+	width: 241px;
+	float: right;
+	text-align: right;
 }
