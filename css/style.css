@@ -20,6 +20,7 @@ h2 {
 	width: 1200px;
 	margin: 0 auto;
 	background-color: #ffffff;
+	box-shadow: 0 9px 15px rgba(0,1,1,0.2);
 }
 .main-header{
 	height: 56px;
@@ -243,7 +244,6 @@ h2 {
 }
 .seach-field {
 	width: 568px;
-	height: 481px;
 	background-color: pink;
 	position: absolute;
 	top: 150px;
@@ -254,7 +254,6 @@ h2 {
 
 	display: inline-block;
 	padding: 30px 0;
-
 
 	background-color: #766357;
 	border: none;
@@ -276,13 +275,12 @@ h2 {
 	
 }
 .footer-item {
-	height: 120px;
+	min-height: 120px;
 	width: 400px;
+	text-align: center;
 }
 .footer-visitsedona {
 	float: left;
-
-	text-align: center;
 }
 .footer-visitsedona a {
 	text-decoration: none;
@@ -293,13 +291,81 @@ h2 {
 	font-size: 21px;
 
 	display: inline-block;
-	padding: 45px 0;
+	margin: 45px 0;
+}
+.footer-visitsedona a:hover {
+	color: #81b3d2;
+}
+.footer-visitsedona a:active {
+	color: #b2b2b2;
+}
+.social-btn {
+	display: inline-block;
+	margin: 36px 3px;
+
+	width: 46px;
+	height: 48px;
+	
+	background: #81b3d2 url(../img/spritesheet.png) no-repeat center;
+
+	text-decoration: none;
+}
+.social-btn:hover {
+	background-color: #669ec0;
+}
+.social-btn-tw:active {
+	background-position: -399px -248px;
+	background-color: #5496bd;
+}
+.social-btn-fb:active {
+	background-position: -326px -166px; 
+	background-color: #5496bd;
+}
+.social-btn-yt:active {
+	background-position: -17px -400px; 
+	background-color: #5496bd;
+}
+.social-btn-tw {
+	background-position: -399px -173px;
+}
+.social-btn-fb {
+	background-position: -326px -87px; 
+}
+.social-btn-yt {
+	background-position: -372px -324px; 
 }
 .footer-social {
 	float: left;
+
+	font-size: 0;
+	vertical-align: top;
 }
 .footer-copyright {
 	float: right;
+}
+.footer-copyright span {
+	line-height: 26px;
+
+	padding: 45px 0;
+	padding-right: 5px;
+
+	display: inline-block;
+}
+.footer-copyright a {
+	text-decoration: none;
+
+	display: inline-block;
+	width: 113px;
+	height: 39px;
+	vertical-align: middle;
+	background: url(../img/html-academy_logo.png) no-repeat;
+}
+.footer-copyright a:hover {
+	background: url(../img/html-academy_logo_hvr.png) no-repeat;
+}
+.footer-copyright a:active {
+	background: url(../img/html-academy_logo.png) no-repeat;
+	opacity: 0.4;
 }
 .main-footer {
 	position: relative;
@@ -309,7 +375,7 @@ h2 {
 	position: absolute;
 	bottom: 0px;
 }
-/* sedona hotels */
+									/* sedona hotels */
 .main-catalog-picture {
 	height: 217px;
 	background: #ffffff url(../img/catalog_photo.jpg) no-repeat 0 -56px;
@@ -354,4 +420,18 @@ h2 {
 	width: 241px;
 	float: right;
 	text-align: right;
+}
+.modal-content {
+	position: absolute;
+
+	height: 395px;
+	width: 568px;
+
+	background-color: orange;
+}
+.main-seach-form p {
+	
+}
+.seach-form input[type="date"] {
+	
 }
