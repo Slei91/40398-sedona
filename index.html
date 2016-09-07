@@ -88,23 +88,45 @@
 					<button class="btn" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
 					<div class="modal-content">
 						<form action="https://echo.htmlacademy.ru" method="post" class="main-seach-form">
-							<label>
-								<p>Дата заезда:</p>
-								<!-- нужно ли для input date задавать имя, и должно ли оно быть одинаковое если 2 подобных поля, как в данном примере? -->
-								<input type="date" name="calendar-in" max="2016-12-20" min="2016-04-10" value="24 АПРЕЛЯ 2016">
-							</label>
-							<label>
-								<p>Дата выезда:</p>
-								<input type="date" name="calendar-out" max="2016-12-20" min="2016-01-10" value="4 ИЮЛЯ 2016">
-							</label>
-							<label>
-								<p>Взрослые</p>
-								<input type="number" name="adults" min="0" max="99" placeholder="2">
-							</label>
-							<label>
-								<p>Дети</p>
-								<input type="number" name="child" min="0" max="99" placeholder="0">
-							</label>
+							<div class="form-sec">
+								<label>
+									<p>Дата заезда:</p>
+									<input type="date" name="calendar-in" max="2016-12-20" min="2016-04-10" value="24 АПРЕЛЯ 2016">
+									<div class="calendar"></div>
+								</label>
+							</div>
+							<div class="form-sec">
+								<label>
+									<p>Дата выезда:</p>
+									<input type="date" name="calendar-out" max="2016-12-20" min="2016-01-10" value="4 ИЮЛЯ 2016">
+									<div class="calendar"></div>	
+								</label>
+							</div>
+							<div class="form-sec">
+								<div class="form-sec-person form-sec-person-1">
+									<label>
+										<p>Взрослые:</p>
+										<div class="main-counter">
+											<div class="counter counter-plus"></div>
+											<input type="number" name="adults" min="0" max="99" placeholder="2">
+											<div class="counter counter-minus"></div>	
+										</div>
+									</label>
+								</div>	
+							
+								<div class="form-sec-person form-sec-person-2">
+									<label>
+										<p class="child">Дети:</p>
+										<div class="main-counter">
+											<div class="counter counter-plus"></div>
+											<input type="number" name="child" min="0" max="99" placeholder="0">
+											<div class="counter counter-minus"></div>
+											
+										</div>
+									</label>
+								</div>
+								
+							</div>	
 							<input type="submit" value="Найти">
 						</form>
 					</div>	

@@ -20,7 +20,7 @@ h2 {
 	width: 1200px;
 	margin: 0 auto;
 	background-color: #ffffff;
-	box-shadow: 0 9px 15px rgba(0,1,1,0.2);
+	box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.2); 
 }
 .main-header{
 	height: 56px;
@@ -238,8 +238,8 @@ h2 {
 	margin-bottom: 28px;
 }
 .seach-block p {
-	margin: 0;
-	padding: 0 380px;
+	margin: 0 380px;
+	
 	line-height: 24px;
 }
 .seach-field {
@@ -267,6 +267,13 @@ h2 {
 	font-weight: bold;
 	font-family: inherit;
 	text-transform: uppercase;
+}
+.seach-field .btn:hover {
+	background-color: #604e43;
+}
+.seach-field .btn:active {
+	background-color: #503e33;
+	color: #857871;
 }
 .map-container {
 	height: 593px;
@@ -421,17 +428,159 @@ h2 {
 	float: right;
 	text-align: right;
 }
+                                         /* ПОПАП */
 .modal-content {
 	position: absolute;
 
-	height: 395px;
-	width: 568px;
+	width: 457px;
+	padding: 55px 55px 55px 56px;
 
-	background-color: orange;
+	background-color: white;
+	box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15); 
 }
-.main-seach-form p {
-	
+.form-sec {
+	margin-bottom: 29px;
+	min-height: 38px;
+	position: relative;
 }
-.seach-form input[type="date"] {
+.form-sec p {
+	font-family:inherit;
+	font-weight: bold;
+	line-height: 26px;
+	font-size: 14px;
+
+	margin: 0;
+	padding: 5px 0 7px 0;
+	float: left;
+}
+.form-sec p.child {
+	padding-left: 47px;
+
+}
+.calendar {
+	width: 38px;
+	height: 38px;
 	
+	position: absolute;	
+	left: 419px;
+	
+	background: url(../img/spritesheet.png) no-repeat -93px -92px;
+}
+.calendar:hover {
+	background: url(../img/spritesheet.png) no-repeat -255px -92px;
+}
+.calendar:active {
+	background: url(../img/spritesheet.png) no-repeat -174px -92px;
+}
+.main-seach-form input[type="date"] {
+	font-family:inherit;
+	font-weight: bold;
+	line-height: 26px;
+	font-size: 14px;
+	
+	width: 291px;
+	float: right;
+	padding: 5px 40px 7px 15px;
+
+	outline: none;
+	border: none;
+	background-color: #f2f2f2;
+}
+.main-seach-form input[type="date"]:hover {
+	background-color: #ebebeb;
+}
+.main-seach-form input[type="date"]:active {
+	background-color: white;
+	box-shadow: inset 0 0 0 2px #e5e5e5;
+}
+.form-sec-person {
+	width: 225px;
+}
+.main-counter {
+	width: 114px;
+	min-height: 38px;
+	float: right;
+}
+.counter {
+	width: 38px;
+	height: 38px;
+	background-color: #f2f2f2;
+}
+.counter-minus {
+	float: left;
+	background: #f2f2f2 url(../img/spritesheet.png) no-repeat -185px -240px;
+}
+.counter-minus:hover {
+	background: #f2f2f2 url(../img/spritesheet.png) no-repeat -329px -240px;
+}
+.counter-minus:active {
+	background: #f2f2f2 url(../img/spritesheet.png) no-repeat -257px -240px;
+}
+.counter-plus {	
+	float: right;
+	background: #f2f2f2 url(../img/spritesheet.png) no-repeat -17px -307px;
+}
+.counter-plus:hover {	
+	background: #f2f2f2 url(../img/spritesheet.png) no-repeat -159px -307px;
+}
+.counter-plus:active {	
+	background: #f2f2f2 url(../img/spritesheet.png) no-repeat -88px -307px;
+}
+.main-seach-form input[type="number"] {
+	font-family:inherit;
+	font-weight: bold;
+	line-height: 26px;
+	font-size: 14px;
+
+	float: right;
+	width: 23px;
+	padding: 6px 0 6px 15px;
+
+	outline: none;
+	border: none;
+	background-color: #f2f2f2;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+input[type="number"] {
+-moz-appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.form-sec-person-1 {
+	float: left;
+}
+.form-sec-person-2 {
+	float: right;
+}
+.main-seach-form input[type="submit"] {
+	font-family:inherit;
+	font-weight: bold;
+	line-height: 26px;
+	font-size: 21px;
+	color: white;
+	text-transform: inherit;
+
+	width: 100%;
+	padding: 16px 0 16px;
+	margin-top: 26px;
+
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background-color: #81b3d2;
+}
+.main-seach-form input[type="submit"]:hover {
+	background-color: #669ec0;
+}
+.main-seach-form input[type="submit"]:active {
+	background-color: #5496bd;
+	color: #88b6d1;
 }
